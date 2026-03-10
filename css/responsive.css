@@ -18,3 +18,48 @@ ma solo se c'è spazio sufficiente, quindi a partire da 576px*/
 }
 
 /* TABLET */
+
+/*Il logo nell'header si allinea a sinistra
+Il padding del contenuto principale della pagina aumenta
+Compare il testo "(Dolce Tradizionale)"
+La grandezza del titolo diventa più grande
+Le informazioni della ricetta sotto il video si dispongono a griglia
+I bottoni social si allargano
+compare il banner pubblicitario
+l'immagine nella descrizione della ricetta viene circondata dal test
+*/
+@media screen and (min-width: 768px) {
+    #topbar {
+        justify-content: flex-start;
+        /*cambiamo da center a flex start.
+        si allineano a sinistra.*/
+    }
+
+    main {
+        padding: 40px;
+        /*da 20 passiamo a 40 in tablet*/
+    }
+
+    .recipe-origin {
+        display: inline;
+        /* cambio css dato era none; qui lo mettiamo visibile*/
+    }
+
+    .recipe-name {
+        font-size: 2.5rem; /*2.5 rem = 40px*/
+        /*titolo più grande*/
+    }
+
+    .recipe-info { /*grid: display diventa una griglia */
+        display: grid; 
+        grid-template-columns: 1fr 1fr; /*diventare colonne, creane 2 e
+         calcola la grandezza da solo in base allo spazio disponibile*/
+        gap: 20px; /*spazio di 20 tra prima e seconda colonna*/
+        /* Spazio tra le due colonne */
+    }
+
+    /*dovrebbe comparire il blocco della pubblicità*/
+    .ads {
+        display: block;
+    }
+}
