@@ -6,7 +6,9 @@ ma solo se c'è spazio sufficiente, quindi a partire da 576px*/
     .presentation img {
         /*float per far scorrere il testo attorno all'immagine.*/
         float: left;
-        margin-right: 20px;
+      /*  margin-right: 20px;*/
+        margin: 10px;
+        margin-left: 0;
         margin-bottom: 10px;
         /*margine per parole distanti dalle foto*/
     }
